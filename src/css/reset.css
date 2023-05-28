@@ -1,4 +1,24 @@
 /* Reset styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+main {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -25,6 +45,9 @@ a {
 }
 
 button {
+  border: none;
+  padding: 0;
+  background: none;
   cursor: pointer;
 }
 

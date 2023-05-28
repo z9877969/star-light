@@ -1,0 +1,126 @@
+.burger-menu__modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/burger-bg-mob.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 812px;
+
+  transform: translateX(100%);
+  transition: transform 300ms linear;
+}
+
+.burger-menu__modal.is-open {
+  transform: translateX(0);
+}
+
+.burger-menu__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 175px;
+}
+
+.burger-menu__logo-icon {
+  width: 25px;
+  height: 45px;
+  fill: #fff;
+}
+
+.burger-menu__close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-close {
+  width: auto;
+  height: auto;
+  stroke: #fff;
+}
+
+.burger-menu__nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.burger-menu__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.burger-menu__link {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu__modal {
+    background-image: url(../img/burger-bg-tab-desk.png);
+  }
+
+  .burger-menu__top-wrapper {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 220px;
+  }
+  .burger-menu__logo {
+    font-family: 'Oswald';
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .burger-menu__logo-icon {
+    width: 25px;
+    height: 45px;
+    fill: #fff;
+  }
+
+  .burger__logo-text {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  .burger-menu__close {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-close {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* set visually-hidden */
+  .burger-menu__modal,
+  .burger-menu__modal.is-open {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* set visually-hidden -END */
+}

@@ -1,13 +1,33 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header__container--flex">
+    <h2 class="header__logo">
+      <svg class="header__logo-icon">
+        <use href="../img/sprite.svg#icon-logo"></use>
+      </svg>
+      <span class="header__logo-text">StarlightStudio</span>
+    </h2>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#achievements" class="header__icon">achievements</a>
+        </li>
+        <li class="header__item">
+          <a href="#services" class="header__link">services</a>
+        </li>
+        <li class="header__item">
+          <a href="#advantages" class="header__link">advantages</a>
+        </li>
+        <li class="header__item">
+          <a href="#projects" class="header__link">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__open-modal">get in touch</button>
+    <button class="header__burger-button js-burger-open">
+      <svg class="header__burger-icon">
+        <use href="../img/sprite.svg#icon-burger-button"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+
