@@ -1,7 +1,7 @@
 <section class="latest-works">
   <div class="container">
     <h2 class="latest-works__title">latest works</h2>
-    <div class="latest-works__descr-wrapper">
+    <div class="latest-works__subtitle-wrapper">
       <h3 class="latest-works__subtitle">
         Discover our diverse portfolio of cutting-edge projects.
       </h3>
@@ -12,12 +12,23 @@
       </ul>
     </div>
     <ul class="latest-works__slider">
-      <li class="latest-works__slide latest-works__slide--hidden">
-        <img
-          src="./img/slide-codi.jpg"
-          alt=""
-          class="latest-works__slide-img"
-        />
+      <li class="latest-works__slide">
+        <picture>
+          <source
+            srcset="./img/slide-codi-desk.jpg"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="./img/slide-codi-tab.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./img/slide-codi.jpg"
+            alt=""
+            class="latest-works__slide-img"
+          />
+        </picture>
+
         <div class="latest-works__slide-wrapper">
           <div class="latest-works__slide-text">
             <h4 class="latest-works__slide-title">Codi</h4>
@@ -75,7 +86,7 @@
           </div>
         </div>
       </li>
-      <li class="latest-works__slide">
+      <li class="latest-works__slide latest-works__slide--hidden">
         <img
           src="./img/slide-fujifilm.jpg"
           alt=""

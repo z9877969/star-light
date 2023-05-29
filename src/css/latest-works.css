@@ -3,10 +3,6 @@
   background-color: #1e1e1e;
 }
 
-.latest-works__container--height {
-  min-width: 661px;
-}
-
 .latest-works__title {
   margin-bottom: 8px;
   font-family: 'Oswald';
@@ -15,11 +11,6 @@
   line-height: 120%;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.latest-works__descr-wrapper {
-  margin-bottom: 48px;
-  overflow-x: scroll;
 }
 
 .latest-works__subtitle {
@@ -42,6 +33,7 @@
 
 .latest-works__type-item {
   display: flex;
+  align-items: center;
   min-width: fit-content;
   font-family: 'Oswald';
   font-weight: 400;
@@ -69,27 +61,31 @@
 
 .latest-works__slider {
   border-radius: 20px;
-  background-color: #1e1e1e;
+  background-color: transparent;
   position: relative;
   height: calc(661px + (96px * 3));
+  overflow-y: hidden;
 }
 
 .latest-works__slide {
+  position: relative;
   display: flex;
   flex-direction: column;
-  outline: none;
+  width: 100%;
+  height: 661px;
+  border: none;
   border-radius: 20px;
   background-color: #fff;
-  height: 661px;
-  position: relative;
+  z-index: 10;
 }
 
 .latest-works__slide.latest-works__slide--hidden {
-  background: none;
-  outline: 1px solid #fff;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .latest-works__slide:nth-child(4n + 2) {
@@ -137,7 +133,6 @@
 }
 
 .latest-works__slide-descr {
-  margin-bottom: auto;
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 16px;
@@ -146,6 +141,7 @@
   color: #171717;
 }
 
+/* set visually-hiden */
 .latest-works__slide--hidden .latest-works__slide-img,
 .latest-works__slide--hidden .latest-works__slide-title,
 .latest-works__slide--hidden .latest-works__slide-descr {
@@ -161,6 +157,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* set visually-hiden -END*/
 
 .latest-works__slide-num {
   width: 44px;
@@ -193,8 +190,7 @@
   fill: #000;
   stroke: none;
 }
-.latest-works__slide:nth-child(4n + 1)
-  .latest-works__slide--hidden
+.latest-works__slide.latest-works__slide--hidden:nth-child(4n + 1)
   .latest-works__slide-num-icon:nth-child(-n + 1) {
   fill: #fff;
   stroke: none;
@@ -239,3 +235,104 @@
   stroke: none;
 }
 /* 4th card -END*/
+
+@media screen and (min-width: 768px) {
+  .latest-works {
+    padding: 78px 0;
+  }
+
+  .latest-works__subtitle {
+    width: 539px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .latest-works__type-list {
+    overflow-x: unset;
+  }
+
+  .latest-works__slider {
+    height: calc(390px + (96px * 3));
+  }
+
+  .latest-works__slide {
+    width: 640px;
+    height: 390px;
+    flex-direction: row;
+    z-index: 100;
+  }
+
+  .latest-works__slide-img {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .latest-works__slide-wrapper {
+    flex-grow: 0;
+    padding: 16px;
+    padding-left: 0;
+  }
+
+  .latest-works__slide-text {
+    width: 288px;
+  }
+
+  .latest-works__slide-title,
+  .latest-works__slide-descr {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .latest-works__slide-descr {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .latest-works__subtitle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  .latest-works__subtitle,
+  .latest-works__type-list {
+    margin-bottom: 0;
+  }
+
+  .latest-works__type-list {
+    align-self: flex-end;
+  }
+
+  .latest-works__slider {
+    width: fit-content;
+    height: 368px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+
+  .latest-works__slide {
+    width: 760px;
+    height: 368px;
+  }
+  .latest-works__slide:nth-child(4n + 2) {
+    transform: translateY(0) translateX(calc((117px - 100%) * 1));
+  }
+  .latest-works__slide:nth-child(4n + 3) {
+    transform: translateY(0) translateX(calc((117px - 100%) * 2));
+  }
+  .latest-works__slide:nth-child(4n + 4) {
+    transform: translateY(0) translateX(calc((117px - 100%) * 3));
+  }
+
+  .latest-works__slide-img {
+    width: 353px;
+    margin-right: 27px;
+  }
+
+  .latest-works__slide-text {
+    width: 364px;
+  }
+}
