@@ -74,7 +74,7 @@
   stroke: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;

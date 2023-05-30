@@ -236,7 +236,7 @@
 }
 /* 4th card -END*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .latest-works {
     padding: 78px 0;
   }

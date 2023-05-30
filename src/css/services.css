@@ -9,7 +9,6 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 120%;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -104,7 +103,7 @@
   transform: rotate(45deg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .services__subtitle {
     font-size: 40px;
     line-height: 120%;
@@ -148,10 +147,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .services__title {
-    text-align: left;
-  }
-
   .services__subtitle {
     width: 540px;
   }
