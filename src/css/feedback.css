@@ -1,0 +1,160 @@
+.feedback {
+  padding: 40px 0;
+  background-color: #1e1e1e;
+}
+
+.feedback__container--position {
+  position: relative;
+}
+
+.feedback__title {
+  margin-bottom: 48px;
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.feedback__slider-container {
+  position: relative;
+  width: 100%;
+  height: 536px;
+  overflow-x: scroll;
+}
+
+.feedback__list {
+  position: absolute;
+  display: flex;
+  transform: translateX(0);
+  transition: transform 300ms linear;
+}
+.feedback__next {
+  transform: translateX(-312px);
+}
+
+.feedback__item {
+  width: 312px;
+}
+
+.feedback__descr {
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.feedback__creator {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__creator-name {
+  margin-bottom: 8px;
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.feedback__creator-post {
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.feedback__btns-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  column-gap: 20px;
+}
+
+.feedback__btn-nav {
+  width: 48px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__icon-nav {
+  width: 44px;
+  height: 16px;
+  fill: #fff;
+}
+
+@media screen and (min-width: 720px) {
+  .feedback {
+    padding: 78px 0;
+  }
+
+  .feedback__slider-container {
+    position: relative;
+    height: 422px;
+    overflow: hidden;
+  }
+
+  .feedback__item {
+    width: 640px;
+  }
+
+  .feedback__descr {
+    margin-bottom: 88px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedback__container--flex {
+    display: flex;
+    column-gap: 45px;
+  }
+
+  .feedback__title {
+    margin-bottom: 0;
+  }
+
+  .feedback__slider-container {
+    width: 920px;
+    height: 310px;
+    overflow: hidden;
+  }
+
+  .feedback__item {
+    width: 920px;
+  }
+
+  .feedback__descr {
+    height: 192px;
+    margin-bottom: 72px;
+  }
+
+  .feedback__btns-wrapper {
+    column-gap: 30px;
+    right: 90px;
+  }
+
+  .feedback__btn-nav {
+    width: 72px;
+    height: 25px;
+  }
+
+  .feedback__icon-nav {
+    width: 62px;
+    height: 16px;
+  }
+}
