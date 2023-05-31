@@ -10,6 +10,12 @@
   background-color: #00000099;
 }
 
+.modal-question__container {
+  width: calc(360px - (24px * 2));
+  padding-right: 0;
+  padding-left: 0;
+}
+
 /* modal animation */
 .modal-question {
   display: none;
@@ -73,6 +79,10 @@
 }
 
 @media screen and (min-width: 720px) {
+  .modal-question__container {
+    width: calc(720px - (40px * 2));
+  }
+
   .modal-question__form {
     padding: 40px;
   }
@@ -91,6 +101,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .modal-question__container {
+    width: calc(1440px - (165px * 2));
+  }
+
   .modal-question__form {
     padding: 40px 95px;
   }
