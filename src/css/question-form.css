@@ -1,16 +1,11 @@
-.question {
-  padding: 40px 0;
-  background-color: #1e1e1e;
-}
-
-.question__form {
+.question-modal__form {
   padding: 19px;
   padding-top: 40px;
   background-color: #fff;
   border-radius: 20px;
 }
 
-.question__form-title {
+.question-modal__form-title {
   width: 209px;
   margin-bottom: 20px;
   font-family: 'Oswald';
@@ -21,7 +16,7 @@
   color: #171717;
 }
 
-.question__form-input {
+.question-modal__form-input {
   width: 100%;
   margin-bottom: 40px;
   padding: 8px;
@@ -34,12 +29,12 @@
   letter-spacing: 0.02em;
   color: #171717;
 }
-.question__form-input::placeholder {
+.question-modal__form-input::placeholder {
   text-transform: uppercase;
   color: #686868;
 }
 
-.question__btn-submit {
+.question-modal__btn-submit {
   display: flex;
   width: 100%;
   height: 54px;
@@ -58,29 +53,25 @@
 }
 
 @media screen and (min-width: 720px) {
-  .question {
-    padding: 78px 0;
-  }
-
-  .question__form {
+  .question-modal__form {
     padding: 40px;
   }
 
-  .question__form-title {
+  .question-modal__form-title {
     width: 100%;
     margin-bottom: 48px;
     font-size: 40px;
     line-height: 120%;
   }
 
-  .question__btn-submit {
+  .question-modal__btn-submit {
     width: 144px;
     margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .question__form {
+  .question-modal__form {
     padding: 40px 95px;
   }
 }

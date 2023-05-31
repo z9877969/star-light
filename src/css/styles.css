@@ -13,8 +13,12 @@
 @import url('./latest-works.css');
 @import url('./advantages.css');
 @import url('./feedback.css');
+@import url('./question.css');
+@import url('./footer.css');
 
+/* modals styles */
 @import url('./burger-menu.css');
+@import url('./modal-question.css');
 
 :root {
   --font-oswald: 'Oswald', sans-serif;
